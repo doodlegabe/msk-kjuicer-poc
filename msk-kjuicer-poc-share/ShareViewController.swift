@@ -30,12 +30,12 @@ class ShareViewController: UIViewController {
         let content = extensionContext?.inputItems[0] as! NSExtensionItem
         let textContentType = kUTTypeText as String
         for attachment in content.attachments! {
-            if attachment.hasItemConformingToTypeIdentifier(textContentType){
+            if attachment.hasItemConformingToTypeIdentifier(textContentType) {
+                sendButton.isEnabled = true
                 attachment.loadItem(forTypeIdentifier: textContentType, options: nil) {
                     data, error in
                     if error == nil {
                         let url = data as! NSURL
-                        print(url)
                         if let textData = NSData(contentsOf: url as URL) {
                             let datastring = NSString(data: textData as Data, encoding: String.Encoding.utf8.rawValue)
                             
@@ -48,6 +48,8 @@ class ShareViewController: UIViewController {
                         print(error as Any)
                     }
                 }
+            }else{
+                textPreview.text = "Shared item doesn't conform to text type."
             }
         }
     }

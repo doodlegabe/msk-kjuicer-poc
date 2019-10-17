@@ -31,12 +31,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 extension AppDelegate {
     func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey : Any] = [:]) -> Bool {
+          print("extension eorking")
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        
         let homeVC = storyboard.instantiateViewController(withIdentifier: "EditorViewController")
-               self.window?.rootViewController = homeVC
-        if let textData = UserDefaults(suiteName: SharedKeys.appGroup.rawValue)!.object(forKey: SharedKeys.textKey.rawValue) as? String {
-            print("call main")
-        }
+        
+        self.window?.rootViewController = homeVC
+        
+        print(homeVC)
+        
+//        if let textData = UserDefaults(suiteName: SharedKeys.appGroup.rawValue)!.object(forKey: SharedKeys.textKey.rawValue) as? String {
+//            homeVC.handleInComingText(text: textData)
+//            print("call main")
+//        }
         return true
     }
 }
