@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4E359EC6185908EB38EB04B4 /* Pods_msk_kjuicer_poc.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8903D48FBBB65E7F1B3EA5A /* Pods_msk_kjuicer_poc.framework */; };
 		DAB56BCC235871DA00214BF8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB56BCB235871DA00214BF8 /* AppDelegate.swift */; };
 		DAB56BCE235871DA00214BF8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB56BCD235871DA00214BF8 /* SceneDelegate.swift */; };
 		DAB56BD0235871DA00214BF8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB56BCF235871DA00214BF8 /* ViewController.swift */; };
@@ -16,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A8903D48FBBB65E7F1B3EA5A /* Pods_msk_kjuicer_poc.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_msk_kjuicer_poc.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF1A4235E188E03C5D7ECE7E /* Pods-msk-kjuicer-poc.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-msk-kjuicer-poc.release.xcconfig"; path = "Pods/Target Support Files/Pods-msk-kjuicer-poc/Pods-msk-kjuicer-poc.release.xcconfig"; sourceTree = "<group>"; };
 		DAB56BC8235871DA00214BF8 /* msk-kjuicer-poc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "msk-kjuicer-poc.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAB56BCB235871DA00214BF8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DAB56BCD235871DA00214BF8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +27,7 @@
 		DAB56BD4235871DB00214BF8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DAB56BD7235871DB00214BF8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DAB56BD9235871DB00214BF8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DCB8CE0E4E12D7207ABBA45B /* Pods-msk-kjuicer-poc.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-msk-kjuicer-poc.debug.xcconfig"; path = "Pods/Target Support Files/Pods-msk-kjuicer-poc/Pods-msk-kjuicer-poc.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4E359EC6185908EB38EB04B4 /* Pods_msk_kjuicer_poc.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		693F7755EAD2786E9AF37F4A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A8903D48FBBB65E7F1B3EA5A /* Pods_msk_kjuicer_poc.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9BB1B66DD5B870870930437B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DCB8CE0E4E12D7207ABBA45B /* Pods-msk-kjuicer-poc.debug.xcconfig */,
+				AF1A4235E188E03C5D7ECE7E /* Pods-msk-kjuicer-poc.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		DAB56BBF235871DA00214BF8 = {
 			isa = PBXGroup;
 			children = (
 				DAB56BCA235871DA00214BF8 /* msk-kjuicer-poc */,
 				DAB56BC9235871DA00214BF8 /* Products */,
+				9BB1B66DD5B870870930437B /* Pods */,
+				693F7755EAD2786E9AF37F4A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,9 +98,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DAB56BDC235871DB00214BF8 /* Build configuration list for PBXNativeTarget "msk-kjuicer-poc" */;
 			buildPhases = (
+				8AEAA5F544689A77B609F52F /* [CP] Check Pods Manifest.lock */,
 				DAB56BC4235871DA00214BF8 /* Sources */,
 				DAB56BC5235871DA00214BF8 /* Frameworks */,
 				DAB56BC6235871DA00214BF8 /* Resources */,
+				758AC12742E934A62FBF025C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +158,57 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		758AC12742E934A62FBF025C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-msk-kjuicer-poc/Pods-msk-kjuicer-poc-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
+				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-msk-kjuicer-poc/Pods-msk-kjuicer-poc-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8AEAA5F544689A77B609F52F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-msk-kjuicer-poc-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		DAB56BC4235871DA00214BF8 /* Sources */ = {
@@ -282,6 +359,7 @@
 		};
 		DAB56BDD235871DB00214BF8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DCB8CE0E4E12D7207ABBA45B /* Pods-msk-kjuicer-poc.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -300,6 +378,7 @@
 		};
 		DAB56BDE235871DB00214BF8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AF1A4235E188E03C5D7ECE7E /* Pods-msk-kjuicer-poc.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
