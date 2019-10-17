@@ -10,11 +10,12 @@
 		4E359EC6185908EB38EB04B4 /* Pods_msk_kjuicer_poc.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8903D48FBBB65E7F1B3EA5A /* Pods_msk_kjuicer_poc.framework */; };
 		DAA4608223587AC00039FD8B /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = DAA4608123587AC00039FD8B /* README.md */; };
 		DAA4608423587AD90039FD8B /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = DAA4608323587AD90039FD8B /* .gitignore */; };
-		DAA4608823587BC20039FD8B /* APIKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA4608723587BC20039FD8B /* APIKeys.swift */; };
 		DAA4608A23587CAF0039FD8B /* EditorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA4608923587CAF0039FD8B /* EditorViewController.swift */; };
 		DAA460932358B0180039FD8B /* ShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA460922358B0180039FD8B /* ShareViewController.swift */; };
 		DAA460962358B0180039FD8B /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAA460942358B0180039FD8B /* MainInterface.storyboard */; };
 		DAA4609A2358B0180039FD8B /* msk-kjuicer-poc-share.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = DAA460902358B0180039FD8B /* msk-kjuicer-poc-share.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		DAA460A52358BAED0039FD8B /* SharedKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA460A42358BAED0039FD8B /* SharedKeys.swift */; };
+		DAA460A62358BB250039FD8B /* SharedKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA460A42358BAED0039FD8B /* SharedKeys.swift */; };
 		DAB56BCC235871DA00214BF8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB56BCB235871DA00214BF8 /* AppDelegate.swift */; };
 		DAB56BD3235871DA00214BF8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAB56BD1235871DA00214BF8 /* Main.storyboard */; };
 		DAB56BD5235871DB00214BF8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DAB56BD4235871DB00214BF8 /* Assets.xcassets */; };
@@ -58,6 +59,7 @@
 		DAA460952358B0180039FD8B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
 		DAA460972358B0180039FD8B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DAA4609F2358B02B0039FD8B /* msk-kjuicer-poc-share.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "msk-kjuicer-poc-share.entitlements"; sourceTree = "<group>"; };
+		DAA460A42358BAED0039FD8B /* SharedKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedKeys.swift; sourceTree = "<group>"; };
 		DAB56BC8235871DA00214BF8 /* msk-kjuicer-poc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "msk-kjuicer-poc.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAB56BCB235871DA00214BF8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DAB56BD2235871DA00214BF8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -147,6 +149,7 @@
 				DAB56BD9235871DB00214BF8 /* Info.plist */,
 				DAA4608723587BC20039FD8B /* APIKeys.swift */,
 				DAA4608923587CAF0039FD8B /* EditorViewController.swift */,
+				DAA460A42358BAED0039FD8B /* SharedKeys.swift */,
 			);
 			path = "msk-kjuicer-poc";
 			sourceTree = "<group>";
@@ -308,6 +311,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DAA460A62358BB250039FD8B /* SharedKeys.swift in Sources */,
 				DAA460932358B0180039FD8B /* ShareViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -318,7 +322,7 @@
 			files = (
 				DAB56BCC235871DA00214BF8 /* AppDelegate.swift in Sources */,
 				DAA4608A23587CAF0039FD8B /* EditorViewController.swift in Sources */,
-				DAA4608823587BC20039FD8B /* APIKeys.swift in Sources */,
+				DAA460A52358BAED0039FD8B /* SharedKeys.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
