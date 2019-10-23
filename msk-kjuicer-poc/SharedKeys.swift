@@ -9,7 +9,7 @@
 import Foundation
 
 enum SharedKeys: String {
-    case appGroup = "group.com.brotherclone.msk.kjuicer.share"
+    case appGroup = "group.com.brotherclone.msk.kjuicer-poc.share"
     case shareUrl = "kjuicerShare"
     case textKey = "text"
 }
