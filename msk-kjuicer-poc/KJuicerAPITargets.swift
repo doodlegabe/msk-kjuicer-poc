@@ -16,13 +16,13 @@ enum KJuicerAPITargets {
 
 extension KJuicerAPITargets: TargetType {
     var baseURL: URL {
-        return URL(string: "\(APIKeys.baseurl)")!
+        return URL(string: "\(APIKeys.baseurl.rawValue)")!
     }
     
     var path: String {
         switch self {
         case .postTextToEditor:
-            return "papers/i/\(APIKeys.APIId)/"
+            return "papers/i/\(APIKeys.APIId.rawValue)/"
         }
     }
     

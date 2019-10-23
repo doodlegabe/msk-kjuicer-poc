@@ -24,7 +24,7 @@ class EditorViewController: UIViewController, WKNavigationDelegate {
                     
                     let paperResult = try filteredResponse.map(Paper.self)
                     if let paper = paperResult as Paper? {
-                        if let url = URL(string: paper.urlString){
+                        if let url = URL(string: paper.url){
                             self.editorWebView.load(URLRequest(url: url))
                             self.editorWebView.allowsBackForwardNavigationGestures = false
                             textCompletionHandler(paper, nil)

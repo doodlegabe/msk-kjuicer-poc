@@ -10,20 +10,20 @@ import Foundation
 
 struct Paper{
     var id: String
-    var urlString: String
+    var url: String
 }
 
 extension Paper: Decodable{
     
     enum PaperCodingKeys: String, CodingKey{
         case id
-        case urlString
+        case url
     }
     
     init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: PaperCodingKeys.self)
         id = try container.decode(String.self, forKey: .id)
-        urlString = try container.decode(String.self, forKey: .urlString)
+        url = try container.decode(String.self, forKey: .url)
     }
     
 }

@@ -37,18 +37,21 @@ extension AppDelegate {
         let homeVC = storyboard.instantiateViewController(withIdentifier: "EditorViewController") as! EditorViewController
         
         self.window?.rootViewController = homeVC
-    
+        
         if let textData = UserDefaults(suiteName: SharedKeys.appGroup.rawValue)!.object(forKey: SharedKeys.textKey.rawValue) as? String {
+            
             homeVC.handleInComingText(text: textData, textCompletionHandler: { paper, error in
 
                 if error != nil {
                     print(error as Any)
                 }else{
+                    print("ok")
                     // MARK: Display Success Message.
                 }
             })
                 return true
         } else{
+                print("nothing in user defaults")
                 return false
         }
     }
