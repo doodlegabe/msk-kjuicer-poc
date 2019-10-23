@@ -14,9 +14,30 @@ class EditorViewController: UIViewController, WKNavigationDelegate {
     
     var editorWebView: WKWebView!
     
-    func handleInComingText(text: String, textCompletionHandler: @escaping (String?, Error?)-> Void){
-        print(text)
-        textCompletionHandler(text, nil)
+    func handleInComingText(text: String, textCompletionHandler: @escaping (Paper?, Error?)-> Void){
+        let kJuicerAPIProvider = NetworkManager.provider
+        kJuicerAPIProvider.request(.postTextToEditor(key: APIKeys.mainKey.rawValue, title:"From Moleskine Notes", content: text)) {  result in
+            switch result {
+            case let .success(moyaResponse):
+                do{
+                    let filteredResponse = try moyaResponse.filterSuccessfulStatusCodes()
+                    
+                    let paperResult = try filteredResponse.map(Paper.self)
+                    if let paper = paperResult as Paper? {
+                        if let url = URL(string: paper.url){
+                            self.editorWebView.load(URLRequest(url: url))
+                            self.editorWebView.allowsBackForwardNavigationGestures = false
+                            textCompletionHandler(paper, nil)
+                        }
+                    }
+                } catch let error {
+                    textCompletionHandler(nil, error)
+                }
+            case let .failure(error):
+                textCompletionHandler(nil, error)
+            }
+        }
+        
     }
     
     
@@ -27,9 +48,6 @@ class EditorViewController: UIViewController, WKNavigationDelegate {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-        let url = URL(string: "https://beta.kjuicer.com/papers/i/486069b9-b244-4a2d-9a86-e81b986e5071/edit/27a8076d-518f-46e9-978c-660513a9ba34/")!
-        editorWebView.load(URLRequest(url: url))
-        editorWebView.allowsBackForwardNavigationGestures = false
     }
     
 }

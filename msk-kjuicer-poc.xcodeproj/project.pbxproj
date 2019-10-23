@@ -8,6 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		4E359EC6185908EB38EB04B4 /* Pods_msk_kjuicer_poc.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8903D48FBBB65E7F1B3EA5A /* Pods_msk_kjuicer_poc.framework */; };
+		DA4C24622360B14800F79A31 /* KJuicerAPIMocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4C24612360B14800F79A31 /* KJuicerAPIMocks.swift */; };
+		DA4C24652360B18000F79A31 /* Paper.json in Resources */ = {isa = PBXBuildFile; fileRef = DA4C24642360B18000F79A31 /* Paper.json */; };
+		DA4C24672360B5E400F79A31 /* KJuicerAPITargets.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4C24662360B5E400F79A31 /* KJuicerAPITargets.swift */; };
+		DA4C24682360B67200F79A31 /* APIKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA4608723587BC20039FD8B /* APIKeys.swift */; };
+		DA4C246A2360B96900F79A31 /* APITargetProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4C24692360B96900F79A31 /* APITargetProtocol.swift */; };
+		DA4C246C2360B9D600F79A31 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4C246B2360B9D600F79A31 /* NetworkManager.swift */; };
+		DA4C246E2360BF8A00F79A31 /* Paper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4C246D2360BF8A00F79A31 /* Paper.swift */; };
+		DA4C24712360CC2C00F79A31 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA4C246F2360CC2C00F79A31 /* Main.storyboard */; };
 		DAA4608223587AC00039FD8B /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = DAA4608123587AC00039FD8B /* README.md */; };
 		DAA4608423587AD90039FD8B /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = DAA4608323587AD90039FD8B /* .gitignore */; };
 		DAA4608A23587CAF0039FD8B /* EditorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA4608923587CAF0039FD8B /* EditorViewController.swift */; };
@@ -17,7 +25,6 @@
 		DAA460A52358BAED0039FD8B /* SharedKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA460A42358BAED0039FD8B /* SharedKeys.swift */; };
 		DAA460A62358BB250039FD8B /* SharedKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA460A42358BAED0039FD8B /* SharedKeys.swift */; };
 		DAB56BCC235871DA00214BF8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB56BCB235871DA00214BF8 /* AppDelegate.swift */; };
-		DAB56BD3235871DA00214BF8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAB56BD1235871DA00214BF8 /* Main.storyboard */; };
 		DAB56BD5235871DB00214BF8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DAB56BD4235871DB00214BF8 /* Assets.xcassets */; };
 		DAB56BD8235871DB00214BF8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAB56BD6235871DB00214BF8 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
@@ -49,6 +56,13 @@
 /* Begin PBXFileReference section */
 		A8903D48FBBB65E7F1B3EA5A /* Pods_msk_kjuicer_poc.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_msk_kjuicer_poc.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF1A4235E188E03C5D7ECE7E /* Pods-msk-kjuicer-poc.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-msk-kjuicer-poc.release.xcconfig"; path = "Pods/Target Support Files/Pods-msk-kjuicer-poc/Pods-msk-kjuicer-poc.release.xcconfig"; sourceTree = "<group>"; };
+		DA4C24612360B14800F79A31 /* KJuicerAPIMocks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KJuicerAPIMocks.swift; sourceTree = "<group>"; };
+		DA4C24642360B18000F79A31 /* Paper.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Paper.json; sourceTree = "<group>"; };
+		DA4C24662360B5E400F79A31 /* KJuicerAPITargets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KJuicerAPITargets.swift; sourceTree = "<group>"; };
+		DA4C24692360B96900F79A31 /* APITargetProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APITargetProtocol.swift; sourceTree = "<group>"; };
+		DA4C246B2360B9D600F79A31 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		DA4C246D2360BF8A00F79A31 /* Paper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Paper.swift; sourceTree = "<group>"; };
+		DA4C24702360CC2C00F79A31 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "msk-kjuicer-poc/Base.lproj/Main.storyboard"; sourceTree = "<group>"; };
 		DAA4608123587AC00039FD8B /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		DAA4608323587AD90039FD8B /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		DAA4608723587BC20039FD8B /* APIKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIKeys.swift; sourceTree = "<group>"; };
@@ -62,7 +76,6 @@
 		DAA460A42358BAED0039FD8B /* SharedKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedKeys.swift; sourceTree = "<group>"; };
 		DAB56BC8235871DA00214BF8 /* msk-kjuicer-poc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "msk-kjuicer-poc.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAB56BCB235871DA00214BF8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DAB56BD2235871DA00214BF8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DAB56BD4235871DB00214BF8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DAB56BD7235871DB00214BF8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DAB56BD9235871DB00214BF8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -105,6 +118,14 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		DA4C24632360B16300F79A31 /* Stubs */ = {
+			isa = PBXGroup;
+			children = (
+				DA4C24642360B18000F79A31 /* Paper.json */,
+			);
+			path = Stubs;
+			sourceTree = "<group>";
+		};
 		DAA460912358B0180039FD8B /* msk-kjuicer-poc-share */ = {
 			isa = PBXGroup;
 			children = (
@@ -141,15 +162,21 @@
 		DAB56BCA235871DA00214BF8 /* msk-kjuicer-poc */ = {
 			isa = PBXGroup;
 			children = (
+				DA4C246F2360CC2C00F79A31 /* Main.storyboard */,
+				DA4C24632360B16300F79A31 /* Stubs */,
 				DAA4608B2358AFC80039FD8B /* msk-kjuicer-poc.entitlements */,
 				DAB56BCB235871DA00214BF8 /* AppDelegate.swift */,
-				DAB56BD1235871DA00214BF8 /* Main.storyboard */,
 				DAB56BD4235871DB00214BF8 /* Assets.xcassets */,
 				DAB56BD6235871DB00214BF8 /* LaunchScreen.storyboard */,
 				DAB56BD9235871DB00214BF8 /* Info.plist */,
 				DAA4608723587BC20039FD8B /* APIKeys.swift */,
 				DAA4608923587CAF0039FD8B /* EditorViewController.swift */,
 				DAA460A42358BAED0039FD8B /* SharedKeys.swift */,
+				DA4C24612360B14800F79A31 /* KJuicerAPIMocks.swift */,
+				DA4C24662360B5E400F79A31 /* KJuicerAPITargets.swift */,
+				DA4C24692360B96900F79A31 /* APITargetProtocol.swift */,
+				DA4C246B2360B9D600F79A31 /* NetworkManager.swift */,
+				DA4C246D2360BF8A00F79A31 /* Paper.swift */,
 			);
 			path = "msk-kjuicer-poc";
 			sourceTree = "<group>";
@@ -248,8 +275,9 @@
 				DAA4608423587AD90039FD8B /* .gitignore in Resources */,
 				DAB56BD8235871DB00214BF8 /* LaunchScreen.storyboard in Resources */,
 				DAB56BD5235871DB00214BF8 /* Assets.xcassets in Resources */,
+				DA4C24712360CC2C00F79A31 /* Main.storyboard in Resources */,
 				DAA4608223587AC00039FD8B /* README.md in Resources */,
-				DAB56BD3235871DA00214BF8 /* Main.storyboard in Resources */,
+				DA4C24652360B18000F79A31 /* Paper.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -320,9 +348,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA4C24682360B67200F79A31 /* APIKeys.swift in Sources */,
 				DAB56BCC235871DA00214BF8 /* AppDelegate.swift in Sources */,
 				DAA4608A23587CAF0039FD8B /* EditorViewController.swift in Sources */,
+				DA4C246A2360B96900F79A31 /* APITargetProtocol.swift in Sources */,
+				DA4C246C2360B9D600F79A31 /* NetworkManager.swift in Sources */,
+				DA4C246E2360BF8A00F79A31 /* Paper.swift in Sources */,
 				DAA460A52358BAED0039FD8B /* SharedKeys.swift in Sources */,
+				DA4C24622360B14800F79A31 /* KJuicerAPIMocks.swift in Sources */,
+				DA4C24672360B5E400F79A31 /* KJuicerAPITargets.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -337,20 +371,20 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		DA4C246F2360CC2C00F79A31 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DA4C24702360CC2C00F79A31 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
 		DAA460942358B0180039FD8B /* MainInterface.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				DAA460952358B0180039FD8B /* Base */,
 			);
 			name = MainInterface.storyboard;
-			sourceTree = "<group>";
-		};
-		DAB56BD1235871DA00214BF8 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				DAB56BD2235871DA00214BF8 /* Base */,
-			);
-			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 		DAB56BD6235871DB00214BF8 /* LaunchScreen.storyboard */ = {

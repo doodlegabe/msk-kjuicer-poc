@@ -38,7 +38,6 @@ class ShareViewController: UIViewController {
                         let url = data as! NSURL
                         if let textData = NSData(contentsOf: url as URL) {
                             let datastring = NSString(data: textData as Data, encoding: String.Encoding.utf8.rawValue)
-                            
                             if let userDefaults = UserDefaults(suiteName: SharedKeys.appGroup.rawValue){
                                 userDefaults.set(String(datastring!) as AnyObject, forKey: SharedKeys.textKey.rawValue)
                                 self.textPreview.text = String(datastring!)
@@ -57,6 +56,7 @@ class ShareViewController: UIViewController {
     func redirectToHost(){
         var url:URL
         url = URL(string: "\(SharedKeys.shareUrl.rawValue)://dataUrl=\(SharedKeys.textKey.rawValue)")!
+        print(url)
         var responder = self as UIResponder?
         let selectorOpenURL = sel_registerName("openURL:")
         while (responder != nil) {
